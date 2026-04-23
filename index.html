@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The AI-Powered Pupil Services Leader · 30 Workflows</title>
+<meta name="description" content="A clickable library of 30 AI workflows for Directors of Special Education and Assistant Superintendents of Pupil Services — CSE/CPSE, 504 plans, MTSS, McKinney-Vento, related services, budget, and family engagement. Built by Dr. Brian Graham." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f1b2d'/><text x='50' y='66' text-anchor='middle' font-family='Georgia' font-size='48' fill='%23b88330' font-weight='700' font-style='italic'>P</text></svg>">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Home">
+      <svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="38" height="38" rx="8" stroke="currentColor" stroke-width="2"/>
+        <path d="M14 11v18M14 11h7c3 0 5.5 2 5.5 5s-2.5 5-5.5 5h-7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand-text">The AI-Powered Pupil Services Leader</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#explorer">Workflows</a>
+      <a href="#voice">Voice-First</a>
+      <a href="#agents">Agentic</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">For directors of special education &amp; assistant superintendents of pupil services · evergreen resource</div>
+    <h1 class="hero-title">The AI-Powered <em>Pupil Services Leader</em>.</h1>
+    <p class="hero-sub">A clickable library of 30 workflows across CSE/CPSE, 504 plans, compliance and state reporting, MTSS, related services, McKinney-Vento, staff supervision, and budget. Organized by the size of district you serve — because a director of 450 students IS the school psychologist, while a director of 40,000 runs a department the size of a small district.</p>
+    <div class="hero-meta">
+      <span>30 workflows</span>
+      <span class="dot">·</span>
+      <span>8 domains</span>
+      <span class="dot">·</span>
+      <span>5 district size bands</span>
+      <span class="dot">·</span>
+      <span>Copy-ready prompts</span>
+    </div>
+    <blockquote class="hero-quote">
+      <p>Every IEP is a federal contract written under deadline by people who also have three hundred unread emails. The job is impossible on good days. AI is the synthesis partner that gets you to Friday without a compliance letter.</p>
+      <cite>— The premise behind this library</cite>
+    </blockquote>
+  </div>
+</section>
+
+<section id="explorer" class="explorer">
+  <div class="wrap">
+    <div class="explorer-header">
+      <h2 class="section-title">Workflow Library</h2>
+      <p class="section-sub">Filter by tool, domain, or the size of your district. Or switch to the "By District Size" view to see workflows grouped for your context.</p>
+    </div>
+
+    <div class="view-toggle" role="tablist" aria-label="View mode">
+      <button class="view-btn active" data-view="grid" role="tab" aria-selected="true">Grid view</button>
+      <button class="view-btn" data-view="sized" role="tab" aria-selected="false">By District Size</button>
+    </div>
+
+    <div class="controls" role="region" aria-label="Filter workflows" id="filterControls">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="Search workflows, tools, or keywords…" aria-label="Search workflows" />
+      </div>
+
+      <div class="filter-group" role="radiogroup" aria-label="Filter by district size">
+        <span class="filter-label">District size</span>
+        <button class="chip active" data-filter="size" data-value="all">All</button>
+        <button class="chip" data-filter="size" data-value="xs">&lt; 500</button>
+        <button class="chip" data-filter="size" data-value="sm">&lt; 1,000</button>
+        <button class="chip" data-filter="size" data-value="md">&lt; 3,000</button>
+        <button class="chip" data-filter="size" data-value="lg">&lt; 8,000</button>
+        <button class="chip" data-filter="size" data-value="xl">15,000+</button>
+      </div>
+
+      <div class="filter-group" role="radiogroup" aria-label="Filter by tool">
+        <span class="filter-label">Tool</span>
+        <button class="chip active" data-filter="tool" data-value="all">All</button>
+        <button class="chip" data-filter="tool" data-value="voice">Voice Mode</button>
+        <button class="chip" data-filter="tool" data-value="chatgpt">ChatGPT</button>
+        <button class="chip" data-filter="tool" data-value="claude">Claude</button>
+        <button class="chip" data-filter="tool" data-value="notebooklm">NotebookLM</button>
+      </div>
+
+      <div class="filter-group" role="radiogroup" aria-label="Filter by domain">
+        <span class="filter-label">Domain</span>
+        <button class="chip active" data-filter="domain" data-value="all">All</button>
+        <button class="chip" data-filter="domain" data-value="cse">CSE / CPSE Chair</button>
+        <button class="chip" data-filter="domain" data-value="plan504">504 &amp; ADA</button>
+        <button class="chip" data-filter="domain" data-value="compliance">Compliance &amp; Reporting</button>
+        <button class="chip" data-filter="domain" data-value="mtss">MTSS / RTI</button>
+        <button class="chip" data-filter="domain" data-value="related">Related Services</button>
+        <button class="chip" data-filter="domain" data-value="equity">McKinney-Vento &amp; Equity</button>
+        <button class="chip" data-filter="domain" data-value="staff">Staff &amp; PD</button>
+        <button class="chip" data-filter="domain" data-value="budget">Budget &amp; Family</button>
+      </div>
+    </div>
+
+    <div class="results-meta">
+      <span id="resultCount">30 workflows</span>
+    </div>
+
+    <div id="cardGrid" class="card-grid"></div>
+
+    <div id="sizedView" class="sized-view" hidden></div>
+
+    <div id="emptyState" class="empty-state" hidden>
+      <p>No workflows match those filters. Try clearing a chip or broadening your search.</p>
+    </div>
+  </div>
+</section>
+
+<section id="voice" class="voice-section">
+  <div class="wrap">
+    <div class="voice-header">
+      <div class="eyebrow light">Voice-First Leadership</div>
+      <h2 class="section-title light">The hardest conversation in your week deserves a rehearsal.</h2>
+      <p class="section-sub light">Pupil services runs on conversations that cannot go badly — the declassification meeting, the out-of-district placement denial, the parent who just got the evaluation results. Advanced Voice Mode gives you a place to practice the sentence you don't want to improvise.</p>
+    </div>
+    <div class="voice-grid">
+      <article class="voice-card">
+        <div class="voice-num">01</div>
+        <h3>Rehearse the declassification meeting</h3>
+        <p>Talk through the parent's likely objections before you walk in. Let AI play the parent who is certain their child still needs services. Find the words that honor both the progress and the worry.</p>
+      </article>
+      <article class="voice-card">
+        <div class="voice-num">02</div>
+        <h3>Debrief after the hard day</h3>
+        <p>Twelve IEP meetings, one crisis call, two hallway conversations that mattered. Drive home and talk it out. Get back the pattern, the one thing to note, the one person to follow up with tomorrow.</p>
+      </article>
+      <article class="voice-card">
+        <div class="voice-num">03</div>
+        <h3>Practice the evaluation delivery</h3>
+        <p>Role-play the parent meeting where you give the autism classification for the first time. Get the follow-up questions you'll actually face. Find the sentence that lets the family hear you.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="agents" class="agents-section">
+  <div class="wrap">
+    <div class="agents-header">
+      <div class="eyebrow light">The Agentic Frontier</div>
+      <h2 class="section-title light">NotebookLM as Specialist on the Pupil Services Team</h2>
+      <p class="section-sub light">A notebook with the right sources becomes a domain expert your team can query. Citation-grounded. Never makes things up. Six specialist agents every PPS office should stand up this quarter.</p>
+    </div>
+    <div class="agent-grid">
+      <article class="agent-card">
+        <div class="agent-num">01</div>
+        <h3>The Part 200 Advisor</h3>
+        <p>NYSED Part 200, IDEA regulations, state-issued field memos, and OSEP guidance letters. Tells you what the law actually says about the case on your desk at 4:47 on a Friday.</p>
+      </article>
+      <article class="agent-card">
+        <div class="agent-num">02</div>
+        <h3>The Case History Librarian</h3>
+        <p>Every IEP, every evaluation, every email with the family for a single student, loaded into one notebook. The chronology your team needs for the annual review — and the due-process preparation if it comes.</p>
+      </article>
+      <article class="agent-card">
+        <div class="agent-num">03</div>
+        <h3>The McKinney-Vento &amp; Foster Care Desk</h3>
+        <p>Federal law, state guidance, caseworker contact rosters, district transportation protocols. The answer that keeps a family enrolled and a student in the school of origin.</p>
+      </article>
+      <article class="agent-card">
+        <div class="agent-num">04</div>
+        <h3>The Approved Placement Explorer</h3>
+        <p>SED's approved private placement list, program descriptions, past referrals, and tuition history. When the CSE is considering an out-of-district placement, the due-diligence packet writes itself.</p>
+      </article>
+      <article class="agent-card">
+        <div class="agent-num">05</div>
+        <h3>The Disproportionality Monitor</h3>
+        <p>Three years of classification and discipline data by race, ethnicity, and classification. Answers whether we have a statistical problem before the state letter says we do.</p>
+      </article>
+      <article class="agent-card">
+        <div class="agent-num">06</div>
+        <h3>The Grant Program Library</h3>
+        <p>Every awarded and unsuccessful IDEA Part B application, Title III narrative, and mental-health grant. Your next application starts with an honest look at what worked last time.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow">About this resource</div>
+      <h2 class="section-title">Built for the people who hold the legal contracts for the most vulnerable students.</h2>
+      <p>Directors of Special Education and Assistant Superintendents of Pupil Services run the department where federal law, family grief, union rules, and fiscal reality collide every Tuesday afternoon. Most AI tools built for "school leaders" have nothing specific to offer this job. The generic coaching prompt doesn't help when the parent's letter is on your desk, the 60-school-day clock is running, and the BOCES placement just said no.</p>
+      <p>This library is organized around the eight domains where pupil services work actually lives — CSE/CPSE chair work, 504 plans, compliance and state reporting, MTSS, related services, McKinney-Vento and equity, staff supervision, and budget and family engagement. Every workflow is scaled by district size, because a director of 450 students is the school psychologist and the BCBA on top of the administrative role, while a director of 40,000 runs a department that looks like a school district of its own.</p>
+      <p>Copy the prompts. Adapt them to your district. Share them with the director across the lake who just inherited 800 IEPs last month.</p>
+    </div>
+    <div class="about-card">
+      <h3>Dr. Brian Graham</h3>
+      <p class="muted">Superintendent of Schools<br/>Grand Island Central School District</p>
+      <p>President, Erie-Niagara School Superintendents Association. External Advisory Board Member, National AI Institute for Exceptional Education at the University at Buffalo. National presenter on AI in public education. Host, <em>Achieving Joy and Mastery in Public Schools</em>.</p>
+      <p class="thanks">Built as an evergreen resource for pupil services leaders in New York and nationally. Share it freely. Send notes, corrections, and new workflows.</p>
+      <a class="pdf-link" href="Pupil_Services_AI_Cheat_Sheet.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span><strong>Download the companion PDF</strong><em>10 highest-leverage workflows · 5 pages · print &amp; share</em></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>The AI-Powered Pupil Services Leader · an evergreen library of 30 workflows for Directors of Special Education and Assistant Superintendents of Pupil Services, organized by domain and district size. Every workflow is meant to be copied, adapted, and improved by the people closest to the work.</p>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
